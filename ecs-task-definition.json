@@ -1,0 +1,18 @@
+{
+  "family": "git-actions-testing",
+  "executionRoleArn": "arn:aws:iam::577258697582:role/ecsTaskExecutionRole",
+  "networkMode": "awsvpc",
+  "containerDefinitions": [
+    {
+      "name": "git-actions-testing",
+      "image": "public.ecr.aws/i8k7r0n2/samugitactions",
+      "portMappings": [
+        { "containerPort": 3000, "hostPort": 3000, "protocol": "tcp" }
+      ],
+      "essential": true
+    }
+  ],
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "512",
+  "memory": "1024"
+}
