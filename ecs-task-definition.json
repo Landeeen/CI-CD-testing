@@ -5,7 +5,7 @@
   "containerDefinitions": [
     {
       "name": "git-actions-testing",
-      "image": "public.ecr.aws/i8k7r0n2/samugitactions:latest",
+      "image": "public.ecr.aws/i8k7r0n2/samugitactions",
       "portMappings": [
         { "containerPort": 3000, "hostPort": 3000, "protocol": "tcp" }
       ],
